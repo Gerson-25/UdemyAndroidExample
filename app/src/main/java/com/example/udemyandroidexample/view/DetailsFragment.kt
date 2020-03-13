@@ -16,6 +16,8 @@ import kotlinx.android.synthetic.main.fragment_details.*
  */
 class DetailsFragment : Fragment() {
 
+    private var dogId = 0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,10 +29,10 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        details_floating_button.setOnClickListener{
-            val action = DetailsFragmentDirections.actionListFragmentToListFragment()
-            Navigation.findNavController(it).navigate(action)
+        arguments?.let {
+            dogId = DetailsFragmentArgs.fromBundle(it).dogId
         }
+
     }
 
 
