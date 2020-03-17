@@ -34,6 +34,24 @@
             android:layout_centerHorizontal="true"
             android:text="this is the description" />
 
+        <TextView
+            android:id="@+id/text_temperament"
+            style="@style/TextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_description"
+            android:layout_centerHorizontal="true"
+            android:text="this is the description" />
+
+        <TextView
+            android:id="@+id/text_lifespan"
+            style="@style/TextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_temperament"
+            android:layout_centerHorizontal="true"
+            android:text="this is the description" />
+
     </RelativeLayout>
 
 </layout>
